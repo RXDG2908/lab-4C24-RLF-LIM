@@ -35,5 +35,6 @@ public class StudentReport {
                 + "Desaprobados      : " + (total - aprobados) + System.lineSeparator()
                 + "Promedio general  : " + String.format("%.2f", calcularPromedio(estudiantes));
     }
+//actualizado en sprint -1
 }
 
