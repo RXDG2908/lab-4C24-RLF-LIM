@@ -25,6 +25,17 @@ public class StudentController {
         return null;
     }
 
+    public boolean eliminarEstudiante(String codigo) {
+        StudentModel estudiante = buscarPorCodigo(codigo);
+        if (estudiante == null) {
+            vista.mostrarMensaje("No existe el estudiante con codigo: " + codigo);
+            return false;
+        }
+        estudiantes.remove(estudiante);
+        vista.mostrarMensaje("Estudiante eliminado: " + estudiante.getNombre());
+        return true;
+    }
+
     public void listarEstudiantes() {
         vista.mostrarListado(estudiantes);
     }
