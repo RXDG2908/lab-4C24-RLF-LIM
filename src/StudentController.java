@@ -39,8 +39,10 @@ public class StudentController {
         controlador.agregarEstudiante(new StudentModel("C001", "Renzo Leon", 16.5));
         controlador.agregarEstudiante(new StudentModel("C002", "Erick Gamarra", 14.0));
         controlador.agregarEstudiante(new StudentModel("C003", "Mishel Rojas", 11.5));
+        controlador.agregarEstudiante(new StudentModel("C004", "Diego Ramos", 9.5));
 
         controlador.listarEstudiantes();
         controlador.mostrarReporte();
+        // actualizado en sprint-1
     }
 }
